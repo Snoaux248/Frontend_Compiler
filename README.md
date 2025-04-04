@@ -2,7 +2,7 @@
 
 **Author**: Ethan Childs  
 **Language**: C  
-**Project Type**: Lexical and Syntax Analyzer
+**Project Type**: Lexical Analyzer and Syntax Parser
 
 **Backus-Naur Form (BNF) Rules**
 In this frontend compiler I wrote Lexical and Syntax Analyzers capable of parsing source code 
