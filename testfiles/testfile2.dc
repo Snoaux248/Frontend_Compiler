@@ -1,0 +1,9 @@
+f := 15;
+i := 11;
+
+read(n);
+
+if n <> i:
+begin
+	print(f)
+end

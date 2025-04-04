@@ -1,0 +1,51 @@
+a := 1;
+b := 2;
+c := a + b;
+read(a);
+read(b);
+print(a);
+print(b);
+print(c);
+if a = b:
+begin
+    a := a + 1;
+    b := b + 1;
+    print(a);
+    print(b)
+end;
+if a <> b:
+begin
+    read(c);
+    c := a + b;
+    print(c)
+end;
+a := a - 1;
+b := b * 2;
+c := c / 3;
+print(a);
+print(b);
+print(c);
+read(a);
+read(b);
+read(c);
+if c = b:
+begin
+    a := b - c;
+    print(a)
+end;
+if a <> c:
+begin
+    print(a);
+    print(b)
+end;
+a := a + 1;
+b := b + 2;
+c := c + 3;
+read(a);
+read(b);
+read(c);
+print(a);
+print(b);
+print(c);
+x := a + b + c;
+print(x)
