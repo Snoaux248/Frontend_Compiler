@@ -43,12 +43,12 @@ Note: The V and N grammar rules define the structure for identifiers (V) and int
 Note: in my parser I accounted for the left wise recursion problem with the following adjustments 
 
 **Grammar Rule (After Left Wise Recursion was fixed)**
-S ::= patchedS S'
-S' ::= ; S S' | ε
-E ::= T E'
-E' ::= + T E' | - T E' | ε
-T ::= F T'
-T' ::= * F T' | / F T' | ** F T' | ε
+S ::= patchedS S' <br>
+S' ::= ; S S' | ε <br>
+E ::= T E' <br>
+E' ::= + T E' | - T E' | ε <br>
+T ::= F T' <br>
+T' ::= * F T' | / F T' | ** F T' | ε <br>
 
 
 **Lexemes and Tokens**
