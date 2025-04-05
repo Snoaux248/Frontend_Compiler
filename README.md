@@ -87,6 +87,6 @@ Lexemes_and_Tokens= { <br>
 
 Note: The left hand side are the valid lexemes and the right side are the valid tokens for that lexeme in the Cooke Programming Language.
 
-Note on Semicolon Syntax, if you're making your own source files to compile, keep in mind how semicolons work in this language. The rule
+Note: on Semicolon Syntax, if you're making your own source files to compile, keep in mind how semicolons work in this language. The rule
 S ::= S ; S means semicolons are used to separate statements—not to end them.
 So, not every statement should end with a semicolon like in C or Java.
