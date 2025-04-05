@@ -42,7 +42,7 @@ Note: The V and N grammar rules define the structure for identifiers (V) and int
 
 Note: in my parser I accounted for the left wise recursion problem with the following adjustments 
 
-**Grammar Rule (After Left Wise Recursion was fixed)**
+**Grammar Rule (After Left Wise Recursion was fixed)** <br>
 S ::= patchedS S' <br>
 S' ::= ; S S' | ε <br>
 E ::= T E' <br>
