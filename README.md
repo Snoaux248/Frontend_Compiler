@@ -56,34 +56,34 @@ Lexeme formation is guided using the BNF rules in the grammar above. My compiler
 with its associated token. Invalid lexemes are assigned to a token group called UNKNOWN. The following
 token names are used to identify each valid lexeme:
 
-Lexemes_and_Tokens= {
-  ":=" -> "ASSIGN_OP",
-  "<"  -> "LESSER_OP",
-  ">"  -> "GREATER_OP",
-  "="  -> "EQUAL_OP",
-  "<>" -> "NEQUAL_OP",
-  "<=" -> "LEQUAL_OP",
-  ">=" -> "GEQUAL_OP",
-  "("  -> "LEFT_PAREN",
-  ")"  -> "RIGHT_PAREN",
-  "+"  -> "ADD_OP",
-  "-"  -> "SUB_OP",
-  "*"  -> "MULT_OP",
-  "/"  -> "DIV_OP",
-  "**" -> "POW_OP",
-  "++" -> "INC_OP",
-  "--" -> "DEC_OP",
-  ";"  -> "SEMICOLON",
-  ":"  -> "COLON",
-  "read"   -> "KEY_READ",
-  "print"  -> "KEY_PRINT",
-  "if"     -> "KEY_IF",
-  "else"   -> "KEY_ELSE",
-  "begin"  -> "KEY_BEGIN",
-  "end"    -> "KEY_END",
-  "V"      -> "IDENT",
-  "N"      -> "INT_LIT"
-};
+Lexemes_and_Tokens= { <br>
+  ":=" -> "ASSIGN_OP",<br>
+  "<"  -> "LESSER_OP",<br>
+  ">"  -> "GREATER_OP",<br>
+  "="  -> "EQUAL_OP",<br>
+  "<>" -> "NEQUAL_OP",<br>
+  "<=" -> "LEQUAL_OP",<br>
+  ">=" -> "GEQUAL_OP",<br>
+  "("  -> "LEFT_PAREN",<br>
+  ")"  -> "RIGHT_PAREN",<br>
+  "+"  -> "ADD_OP",<br>
+  "-"  -> "SUB_OP",<br>
+  "*"  -> "MULT_OP",<br>
+  "/"  -> "DIV_OP",<br>
+  "**" -> "POW_OP",<br>
+  "++" -> "INC_OP",<br>
+  "--" -> "DEC_OP",<br>
+  ";"  -> "SEMICOLON",<br>
+  ":"  -> "COLON",<br>
+  "read"   -> "KEY_READ",<br>
+  "print"  -> "KEY_PRINT",<br>
+  "if"     -> "KEY_IF",<br>
+  "else"   -> "KEY_ELSE",<br>
+  "begin"  -> "KEY_BEGIN",<br>
+  "end"    -> "KEY_END",<br>
+  "V"      -> "IDENT",<br>
+  "N"      -> "INT_LIT"<br>
+};<br>
 
 Note: The left hand side are the valid lexemes and the right side are the valid tokens for that lexeme in the Cooke Programming Language.
 
