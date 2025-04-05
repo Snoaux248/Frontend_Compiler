@@ -6,7 +6,7 @@
 
 **Backus-Naur Form (BNF) Rules**
 In this frontend compiler I wrote Lexical and Syntax Analyzers capable of parsing source code 
-files provided by the user written in a new programming language called “Cooke”. The syntax for this language
+files provided by the user written in a programming language called “Cooke”. The syntax for this language
 will be based upon the following grammar (in BNF):
 
 P ::= S  
