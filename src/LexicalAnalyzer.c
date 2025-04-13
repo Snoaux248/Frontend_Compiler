@@ -241,38 +241,11 @@ Token getNextToken(){
 }
 
 //function to convert the integers back into the strings defined in my token.h
+char keyStrings[] = {"KEY_READ\0KEY_PRINT\0KEY_IF\0KEY_ELSE\0KEY_BEGIN\0KEY_END\0IDENT\0INT_LIT\0ASSIGN_OP\0LESSER_OP\0GREATER_OP\0EQUAL_OP\0NEQUAL_OP\0LEQUAL_OP\0GEQUAL_OP\0ADD_OP\0SUB_OP\0MULT_OP\0DIV_OP\0POW_OP\0INC_OP\0DEC_OP\0LEFT_PAREN\0RIGHT_PAREN\0SEMICOLON\0COLON\0UNKNOWN\0"};
+int keyStarts[] = {0, 9, 19, 26, 35, 45, 53, 59, 67, 77, 87, 98, 107, 117, 127, 137, 144, 151, 159, 166, 173, 180, 187, 198, 210, 220, 226, 234};
 const char* getTokenString(int tokenConvert){
-    switch(tokenConvert){
-        case KEY_READ: return "KEY_READ";
-        case KEY_PRINT: return "KEY_PRINT";
-        case KEY_IF: return "KEY_IF";
-        case KEY_ELSE: return "KEY_ELSE";
-        case KEY_BEGIN: return "KEY_BEGIN";
-        case KEY_END: return "KEY_END";
-        case IDENT: return "IDENT";
-        case INT_LIT: return "INT_LIT";
-        case ASSIGN_OP: return "ASSIGN_OP";
-        case LESSER_OP: return "LESSER_OP";
-        case GREATER_OP: return "GREATER_OP";
-        case EQUAL_OP: return "EQUAL_OP";
-        case NEQUAL_OP: return "NEQUAL_OP";
-        case LEQUAL_OP: return "LEQUAL_OP";
-        case GEQUAL_OP: return "GEQUAL_OP";
-        case ADD_OP: return "ADD_OP";
-        case SUB_OP: return "SUB_OP";
-        case MULT_OP: return "MULT_OP";
-        case DIV_OP: return "DIV_OP";
-        case POW_OP: return "POW_OP";
-        case INC_OP: return "INC_OP";
-        case DEC_OP: return "DEC_OP";
-        case LEFT_PAREN: return "LEFT_PAREN";
-        case RIGHT_PAREN: return "RIGHT_PAREN";
-        case SEMICOLON: return "SEMICOLON";
-        case COLON: return "COLON";
-        case UNKNOWN: return "UNKNOWN";
-        default: return "UNKNOWN";
-    }
-}
+    return &keyStrings[keyStarts[tokenConvert]];
+} 
 
 
 //Main function if you just want to only run the Lexical Analyzer
